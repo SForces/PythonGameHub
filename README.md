@@ -1,2 +1,0 @@
-# AdamAsmaca
-Bir AdamAsmaca Oyunu
