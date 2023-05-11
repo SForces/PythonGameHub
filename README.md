@@ -53,9 +53,9 @@ admin_sifresi: cokgizlisifre
 #Guvenlik Protokolu:
 #0) Guvenlik yok.
 #1) En Az 8 Haneli Bir Sifre.
-#2) En Az 8 Haneli, Bir rakam bulunduran sifre
-#3) En Az 8 Haneli, Bir rakam bulunduran , Buyuk-kucuk harf olan sifre.
-#4) En Az 8 Haneli, Bir rakam bulunduran , Buyuk-kucuk harf , Ozel Karakter Bulunduran Sifre
+#2) En Az 8 Haneli, Bir rakam ve harf bulunduran sifre
+#3) En Az 8 Haneli, Bir rakam bulunduran , Buyuk+kucuk harf olan sifre.
+#4) En Az 8 Haneli, Bir rakam bulunduran , Buyuk+kucuk harf , Ozel Karakter Bulunduran Sifre
 guvenlik_protokolu: 2
 
 #=======================================
@@ -84,7 +84,7 @@ COIN_Zor_Harf_Alma_Bedeli: 40
 
 #Bu oyunda kayit dosyasi olusmaz. icine yazilcak veri yetersizdir.
 
-#Modlara gore can degerleri (default: 8,4,1) _Egitim Modunda Can Sinirsizdir Bu Yuzden Burada Yok.
+#Modlara gore can degerleri (default: 8,4,1) (Egitim Modunda Can Sinirsizdir Bu Yuzden Burada Yok.)
 KA_Can_Normal: 8
 KA_Can_Zor: 4
 KA_Can_Imkansiz: 1
@@ -93,7 +93,7 @@ KA_Can_Imkansiz: 1
 KA_CoinCarp_Normal: 4
 KA_CoinCarp_Zor: 10
 KA_CoinCarp_Imkansiz: 50 
-#Asagidaki Degisken Sonsuz Oyun Modu Icindir Bunun Coini Bulunan Kelime * value Olarak hesaplanir. buna dikkat etmelisiniz.
+#Asagidaki Degisken Sonsuz Oyun Modu Icindir Bunun Coini (Bulunan Kelime * value) Olarak hesaplanir. buna dikkat etmelisiniz.
 KA_CoinCarp_Inf: 10
 #Sonsuz Moddaki Oyun Kac SANIYE Surecek ? [gireceginiz deger 0 dan kucuk olursa 120 olarak sifirlanir.]
 KA_GameTime_Inf: 120
@@ -131,7 +131,7 @@ config_version: 4.8.0_PB_RLS_IMayZtARFs
     kalan can * 30 Puan Carpani [örn 4 canınız kaldığında:120P]
     Harf Alma Bedeli = config
 
-Yukarıda gördüğünüz can haric tüm değerler config.yaml dosyasından editlenebilir.
+Yukarıda gördüğünüz tüm değerler config.yaml dosyasından editlenebilir.
 
 
 ## Gerçekçi bir Adam Asmaca Oyunu
