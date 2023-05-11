@@ -1,8 +1,7 @@
-# ADAM ASMACA V4.7.0 README FILE
-Tr: Bu Adam Asmaca Oyunu İçin bir beni oku dosyasıdır
+# ADAM ASMACA README FILE
+Bu Adam Asmaca Oyunu İçin bir beni oku dosyasıdır
 
 ## Kurulum
-TR:
 Kurulum için dizindeki [setup.py](setup.py) dosyasını çalıştırmanız gerekmektedir, bu dosya kurulum sırasında [PyYaml](https://pypi.org/project/PyYAML/) kütüphanesini kuracaktır. bunu önceden siz yapmak isterseniz;
 
 ```bash
@@ -39,7 +38,8 @@ Oyunun tüm ayarlarının editleyebileceğiniz bir config dosyası
 
 Example Config;
 ```yaml
-#Adam asmaca oyunu resmi config dosyasi, elleme dedigim yerleri ellemezsen bir sorun olmaz ve "" gibi metin isaretlerini kullanmana gerek yok.
+#Adam asmaca oyunu resmi config dosyasi, elleme dedigim yerleri ellemezsen bir sorun olmaz
+#Ayrica "" gibi metin isaretlerini Kesinlikle Kullanmamalisin.
 
 #DIKKAT ASAGIDAKI DEGERLER ASLA VE ASLA 0 YA DA FALSE OLMAMALIDIR. EGER 0 YA DA FALSE KULLANIRSANIZ KODU BOZARSINIZ.
 
@@ -78,30 +78,36 @@ COIN_Zor_Carpani: 10
 COIN_Kolay_Harf_Alma_Bedeli: 8
 COIN_Normal_Harf_Alma_Bedeli: 20
 COIN_Zor_Harf_Alma_Bedeli: 40
-
-#===============================
-# === KKB OYUNU ICIN AYARLAR ===
-#===============================
+#================================
+# === KELIME AVI ICIN AYARLAR ===
+#================================
 
 #Bu oyunda kayit dosyasi olusmaz. icine yazilcak veri yetersizdir.
 
-#Oyun sureleri (default: 45,30,15)
-KKB_Sure_Kolay: 45
-KKB_Sure_Normal: 30
-KKB_Sure_Zor: 15
+#Modlara gore can degerleri (default: 8,4,1) _Egitim Modunda Can Sinirsizdir Bu Yuzden Burada Yok.
+KA_Can_Normal: 8
+KA_Can_Zor: 4
+KA_Can_Imkansiz: 1
 
-#Tur sonunda Kalan Sure * value olarak hesaplanan coin verme islemleri
-#Burada Kazanilan coinler adam asmaca oyununda kullanilabilecek.
-COIN_Kolay_Carpani_KKB: 1
-COIN_Normal_Carpani_KKB: 2
-COIN_Zor_Carpani_KKB: 4
+#Modlara Gore Coin Carpani (Kalan Can * value)
+KA_CoinCarp_Normal: 4
+KA_CoinCarp_Zor: 10
+KA_CoinCarp_Imkansiz: 50 
+#Asagidaki Degisken Sonsuz Oyun Modu Icindir Bunun Coini Bulunan Kelime * value Olarak hesaplanir. buna dikkat etmelisiniz.
+KA_CoinCarp_Inf: 10
+#Sonsuz Moddaki Oyun Kac SANIYE Surecek ? [gireceginiz deger 0 dan kucuk olursa 120 olarak sifirlanir.]
+KA_GameTime_Inf: 120
+#Modlara Gore Harf Alma Bedelleri;
+KA_GetWord_Price_Normal: 10
+KA_GetWord_Price_Zor: 20
+KA_GetWord_Price_Imkansiz: 35
 
 #Bunu elleme.
-config_version: 4.6.1_PB_RLS_IUAFma
+config_version: 4.8.0_PB_RLS_IMayZtARFs
 ```
 
 
-### OYUN MODU SECIMI
+### OYUN MODU SECIMI (ADAM ASMACA)
 
 -En Kolay Mod: 
 
@@ -167,19 +173,16 @@ Hesaptaki anlik coin: 950
 ## Özel Yazma Efekti:
     Oyun içine özel olarak kodlanmış yazma efekti eklenmiştir. yazılar bir anda ekrana çıkmaktansa belirli saniyelerde yazılmaya başlanmıştır.
 ## Tek Proje Birden Fazla Oyun!
-    Bu proje Temelde Bir Adam Asmaca Oyunu Olsada, İçerisinde 'Karıştırılan Kelimeyi Bul' Ve 'Kelime Avı' İsimli 2 Tane Daha Oyun Vardır Bunlarada Göz Atmayı Unutmayın!
-## Karıştırılan Kelimeyi Bul (KKB)
-    Bu Oyun 3 farklı zorluk seviyesine sahiptir (kolay-orta-zor) bu zorluk seviyelerine göre oyun zorlugu belirlenir
-    örneğin: kolay modda oynuyorsanız 45 saniye süre içerisinde 'belirli' bir kategoriden seçilen kelimenin doğru yazılmış halini bulmanız gerekir
-    kelime = elma ise mlae olarak ekrana çıkar ve kategori = yiyecek olabilir zorluk seviyelerinin tüm özellikleri [config.yaml](config.yaml) dosyasından düzenlenebilir.
+    Bu proje Temelde Bir Adam Asmaca Oyunu Olsada, İçerisinde 'Kelime Avı' İsimli Bir Tane Daha Oyun Vardır Bunada Göz Atmayı Unutmayın!
 ## Kelime Avı Oyunu (KA)
-    Bu Oyunda 4 Farklı Zorluk Seviyesi Vardır (eğitim-normal-zor-imkansız)
+    Bu Oyunda 5 Farklı Zorluk Seviyesi Vardır (eğitim-normal-zor-imkansız-sonsuz)
     eğitim modunda coin kazanılamaz.
     diğer modlar için oyun 'tanımı' verilen kelimeyi kategori vs verilmeden bulmaya çalışmaktır örneğin kelime okul ise oyun aşağıdaki gibi görünür:
         + _ _ _ _
         + Kelime Tanımı: Eğitim Görülen Yer.
         + Bu Hangi Kelime ? (Bir Harf Ya da Kelime Tahmin Et: )
 
+    Sonsuz Modda Belirlenen Sure Icerisinde Bulabildiginiz Kadar Kelimeyi Bulmaya Calisirsiniz. Config Dosyasinda Ayrıntılar vardır
 
 
 
