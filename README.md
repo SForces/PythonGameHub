@@ -2,19 +2,25 @@
 Bu Adam Asmaca Oyunu İçin bir beni oku dosyasıdır
 
 ## Kurulum
-Kurulum için dizindeki [setup.py](setup.py) dosyasını çalıştırmanız gerekmektedir, bu dosya kurulum sırasında [PyYaml](https://pypi.org/project/PyYAML/) kütüphanesini kuracaktır. bunu önceden siz yapmak isterseniz;
+Kurulum için dizindeki [setup.py](setup.py) dosyasını çalıştırmanız gerekmektedir, bu dosya kurulum sırasında [PyYaml](https://pypi.org/project/PyYAML/),[TimePrint](https://pypi.org/project/TimePrintOnPYPI/) Ve [Colorama](https://pypi.org/project/colorama/) Kütüphanelerini kuracaktır. bunu önceden siz yapmak isterseniz;
 
 ```bash
 pip install pyyaml
+pip install TimePrintOnPYPI
+pip install colorama
 ```
 # NASIL OYNANIR?
-Kurulum sonrasında tek yapmanız gereken [game.py](game.py) Dosyanızı çalıştırıp [Kayıt](game.py#L135) Olmanızdır.
+Kurulum sonrasında tek yapmanız gereken game.py Dosyanızı çalıştırıp Kayıt Olmanızdır.
 Sonrasında oyunu oynamaya başlayabilirsiniz.
 
 # ÖZELLİKLER
 ## Her Kullanıcı için farklı login/signup özelliği
 
 Kullanıcılar giriş yaparak hesaplarını kaybetmezler.
+
+## Şifre Oluşturucu!
+
+5.0.0 Güncellemesiyle eklenen kayıt olurken seçenek olarak çıkan 'şifre oluşturucu'!
 
 ## Admin Modu:
 
@@ -47,29 +53,34 @@ Example Config;
 # === GENEL AYARLAR ====
 #=======================
 
+#Oyun Dili, Sadece TR Veya EN Olmalidir.
+
+lang: TR
+
 #Admin hesabina erisim
 admin_kullanici_adi: admin
 admin_sifresi: cokgizlisifre
 #Guvenlik Protokolu:
 #0) Guvenlik yok.
 #1) En Az 8 Haneli Bir Sifre.
-#2) En Az 8 Haneli, Bir rakam ve harf bulunduran sifre
+#2) En Az 8 Haneli, Bir rakam Ve Harf bulunduran sifre
 #3) En Az 8 Haneli, Bir rakam bulunduran , Buyuk+kucuk harf olan sifre.
 #4) En Az 8 Haneli, Bir rakam bulunduran , Buyuk+kucuk harf , Ozel Karakter Bulunduran Sifre
+#5) En Az 16 Haneli, Bir rakam bulunduran , Buyuk+kucuk harf , Ozel Karakter Bulunduran Sifre
 guvenlik_protokolu: 2
-
+#Oyuna baslayan bir oyuncunun hesabina yazilan baslangic coini
+Baslama_coini: 1
+#Oyunlar kaydediliyormu? True haric her deger False sayilir.
+Oyunlar_Kaydedilsinmi: True
+#Oyunda Renk kodlari kullaniliyormu = True haric her deger False Sayilir.
+Oyunda_Renkler_Aktif_Ediliyormu: True
 #=======================================
 # === ADAM ASMACA OYUNU ICIN AYARLAR ===
 #=======================================
-
-#Oyunlar kaydediliyormu? True haric her deger False sayilir.
-Oyunlar_Kaydedilsinmi: True
-#Oyuna baslayan bir oyuncunun hesabina yazilan baslangic coini
-Baslama_coini: 1
 #Oyuncularin sahip oldugu can sayilari (default: 12,6,4)
 AA_Can_Kolay: 12
 AA_Can_Normal: 6
-AA_Can_Zor: 4
+AA_Can_Zor: 0
 #Oyun sonunda kelimeuzunlugu * value olarak hesaplanan coin verme islemleri
 COIN_Kolay_Carpani: 2
 COIN_Normal_Carpani: 5
@@ -84,7 +95,7 @@ COIN_Zor_Harf_Alma_Bedeli: 40
 
 #Bu oyunda kayit dosyasi olusmaz. icine yazilcak veri yetersizdir.
 
-#Modlara gore can degerleri (default: 8,4,1) (Egitim Modunda Can Sinirsizdir Bu Yuzden Burada Yok.)
+#Modlara gore can degerleri (default: 8,4,1) _Egitim Modunda Can Sinirsizdir Bu Yuzden Burada Yok.
 KA_Can_Normal: 8
 KA_Can_Zor: 4
 KA_Can_Imkansiz: 1
@@ -93,7 +104,7 @@ KA_Can_Imkansiz: 1
 KA_CoinCarp_Normal: 4
 KA_CoinCarp_Zor: 10
 KA_CoinCarp_Imkansiz: 50 
-#Asagidaki Degisken Sonsuz Oyun Modu Icindir Bunun Coini (Bulunan Kelime * value) Olarak hesaplanir. buna dikkat etmelisiniz.
+#Asagidaki Degisken Sonsuz Oyun Modu Icindir Bunun Coini Bulunan Kelime * value Olarak hesaplanir. buna dikkat etmelisiniz.
 KA_CoinCarp_Inf: 10
 #Sonsuz Moddaki Oyun Kac SANIYE Surecek ? [gireceginiz deger 0 dan kucuk olursa 120 olarak sifirlanir.]
 KA_GameTime_Inf: 120
@@ -102,8 +113,20 @@ KA_GetWord_Price_Normal: 10
 KA_GetWord_Price_Zor: 20
 KA_GetWord_Price_Imkansiz: 35
 
+# ==============================
+# === KKB OYUNU ICIN AYARLAR ===
+# ==============================
+
+#Oyun Sureleri (SN); default (45,30,15)
+KKB_Sure_Kolay: 45
+KKB_Sure_Normal: 30
+KKB_Sure_Zor: 15
+#Kazanma Durumunda Alinacak Coin = (kalan sure * value)
+KKB_wincoin_kolay: 1
+KKB_wincoin_normal: 2
+KKB_wincoin_zor: 3
 #Bunu elleme.
-config_version: 4.8.0_PB_RLS_IMayZtARFs
+config_version: 5.0.0_PB_RLS_YsTaRZshNSFFNEXTfuvTXB
 ```
 
 
@@ -131,7 +154,7 @@ config_version: 4.8.0_PB_RLS_IMayZtARFs
     kalan can * 30 Puan Carpani [örn 4 canınız kaldığında:120P]
     Harf Alma Bedeli = config
 
-Yukarıda gördüğünüz tüm değerler config.yaml dosyasından editlenebilir.
+Yukarıda gördüğünüz can haric tüm değerler config.yaml dosyasından editlenebilir.
 
 
 ## Gerçekçi bir Adam Asmaca Oyunu
@@ -173,7 +196,7 @@ Hesaptaki anlik coin: 950
 ## Özel Yazma Efekti:
     Oyun içine özel olarak kodlanmış yazma efekti eklenmiştir. yazılar bir anda ekrana çıkmaktansa belirli saniyelerde yazılmaya başlanmıştır.
 ## Tek Proje Birden Fazla Oyun!
-    Bu proje Temelde Bir Adam Asmaca Oyunu Olsada, İçerisinde 'Kelime Avı' İsimli Bir Tane Daha Oyun Vardır Bunada Göz Atmayı Unutmayın!
+    Bu proje Temelde Bir Adam Asmaca Oyunu Olsada, İçerisinde 'Kelime Avı' Ve 'Karıştırılmış Kelimeyi Bul' İsimli 2 Tane Daha Oyun Vardır Bunlarada Göz Atmayı Unutmayın!
 ## Kelime Avı Oyunu (KA)
     Bu Oyunda 5 Farklı Zorluk Seviyesi Vardır (eğitim-normal-zor-imkansız-sonsuz)
     eğitim modunda coin kazanılamaz.
@@ -183,7 +206,12 @@ Hesaptaki anlik coin: 950
         + Bu Hangi Kelime ? (Bir Harf Ya da Kelime Tahmin Et: )
 
     Sonsuz Modda Belirlenen Sure Icerisinde Bulabildiginiz Kadar Kelimeyi Bulmaya Calisirsiniz. Config Dosyasinda Ayrıntılar vardır
-
+## Karıştırılmış Kelimeyi Bul Oyunu (KKB)
+    3 Farklı Zorluk Seviyesi (kolay-orta-zor)
+    Kolay Orta:
+        + Kategorisi verilen Kelimeyi Süreniz Bitmeden Bulun.
+    Zor:
+        + Kategorisi Verilmeyen Kelimeyi Süreniz Bitmeden Bulun.
 
 
 ## Lisans
