@@ -1,5 +1,5 @@
-# <span style="color: #FF0000;">**ADAM ASMACA V5.0.0 README FILE**</span>
-<span style="color: #87CEEB">Bu Adam Asmaca Oyunu İçin bir beni oku dosyasıdır</span>
+# <span style="color: #FF0000;">**PYTHON GAME HUB V6.0.0 - RELEASE README**</span>
+<span style="color: #87CEEB">Bu Python Game Hub Projesi İçin Bir Beni Oku Dosyasıdır.</span>
 
 ## <span style="color: #007FFF;">**Kurulum**</span>
 <span style="color: #87CEEB">Kurulum için dizindeki [setup.py](setup.py) dosyasını çalıştırmanız gerekmektedir, bu dosya kurulum sırasında [PyYaml](https://pypi.org/project/PyYAML/),[TimePrint](https://pypi.org/project/TimePrintOnPYPI/) Ve [Colorama](https://pypi.org/project/colorama/) Kütüphanelerini kuracaktır. bunu önceden siz yapmak isterseniz;</span>
@@ -47,12 +47,12 @@ Sonrasında oyunu oynamaya başlayabilirsiniz.</span>
 Örnek Config;</span>
 
 ```yaml
-#           _____          __  __             _____ __  __          _____            __      _______  ___   ___  
-#     /\   |  __ \   /\   |  \/  |     /\    / ____|  \/  |   /\   / ____|   /\      \ \    / / ____|/ _ \ / _ \ 
-#    /  \  | |  | | /  \  | \  / |    /  \  | (___ | \  / |  /  \ | |       /  \      \ \  / /| |__ | | | | | | |
-#   / /\ \ | |  | |/ /\ \ | |\/| |   / /\ \  \___ \| |\/| | / /\ \| |      / /\ \      \ \/ / |___ \| | | | | | |
-#  / ____ \| |__| / ____ \| |  | |  / ____ \ ____) | |  | |/ ____ \ |____ / ____ \      \  /   ___) | |_| | |_| |
-# /_/____\_\_____/_/ _  \_\_|__|_|_/_/____\_\_____/|_|  |_/_/    \_\_____/_/    \_\      \/   |____(_)___(_)___/ 
+#  _______     _________ _    _  ____  _   _     _____          __  __ ______ _    _ _    _ ____   __      ____   ___   ___  
+# |  __ \ \   / /__   __| |  | |/ __ \| \ | |   / ____|   /\   |  \/  |  ____| |  | | |  | |  _ \  \ \    / / /  / _ \ / _ \ 
+# | |__) \ \_/ /   | |  | |__| | |  | |  \| |  | |  __   /  \  | \  / | |__  | |__| | |  | | |_) |  \ \  / / /_ | | | | | | |
+# |  ___/ \   /    | |  |  __  | |  | | . ` |  | | |_ | / /\ \ | |\/| |  __| |  __  | |  | |  _ <    \ \/ / '_ \| | | | | | |
+# | |      | |     | |  | |  | | |__| | |\  |  | |__| |/ ____ \| |  | | |____| |  | | |__| | |_) |    \  /| (_) | |_| | |_| |
+# |_|___  _|_| _ __|_| _|_|  |_|\____/|_| \_|___\_____/_/_ _ \_\_|__|_|______|_|  |_|\____/|____/      \/  \___(_)___(_)___/ 
 #  / ____|  / __ \  | \ | | |  ____| |_   _|  / ____|                                                            
 # | |      | |  | | |  \| | | |__      | |   | |  __                                                             
 # | |      | |  | | | . ` | |  __|     | |   | | |_ |                                                            
@@ -139,8 +139,31 @@ KKB_wincoin_kolay: 1
 KKB_wincoin_normal: 2
 KKB_wincoin_zor: 3
 
+# ==============================
+# === TSB OYUNU ICIN AYARLAR ===
+# ==============================
+
+#Seviyeye Gore Can Sayilari:
+TSB_Cok_Kolay_Can: 10
+TSB_Kolay_Can: 7
+TSB_Normal_Can: 5
+TSB_Zor_Can: 3
+
+#Seviyeye Gore alinacak coin carpani (Kalan can * value)
+TSB_Cok_Kolay_Coin_Carpani: 1
+TSB_Kolay_Coin_Carpani: 2
+TSB_Normal_Coin_Carpani: 3
+TSB_Zor_Coin_Carpani: 4
+
+# ===========================
+# === ALT SISTEM AYARLARI ===
+# ===========================
+#Log dosyasi olussunmu ? (Aktif etmek icin basindaki # silmeniz yeterli olucaktir.)
+#log_files: True
+#log dosyasindaki 1 gunluk kaydin alabilecegi maksimum satir sayisi.
+#log_file_max_lines: 720
 #Bunu elleme.
-config_version: 5.0.0_PB_RLS_YsTaRZshNSFFNEXTfuvTXB
+config_version: PGH_6.0.0_DKCusxnxcudcg_Config_XDFECVDUN
 ```
 
 
@@ -228,6 +251,9 @@ Hesaptaki anlik coin: 950
     Zor:
         + Kategorisi Verilmeyen Kelimeyi Süreniz Bitmeden Bulun.
 
+## <span style="color: orange;">**Tutulan Kelimeyi Bul Oyunu (TKB)**</span>
+    4 Farklı Zorluk Seviyesi (Çok Kolay - Kolay - Normal - Zor)
+    Canlarınız bitmeden önce tutulan sayıyı bulun ve coin kazanın.
 
 ## <span style="color: red;">**Lisans**</span>
 
