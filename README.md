@@ -2,12 +2,13 @@
 <span style="color: #87CEEB">Bu Python Game Hub Projesi İçin Bir Beni Oku Dosyasıdır.</span>
 
 ## <span style="color: #007FFF;">**Kurulum**</span>
-<span style="color: #87CEEB">Kurulum için dizindeki [setup.py](setup.py) dosyasını çalıştırmanız gerekmektedir, bu dosya kurulum sırasında [PyYaml](https://pypi.org/project/PyYAML/),[TimePrint](https://pypi.org/project/TimePrintOnPYPI/) Ve [Colorama](https://pypi.org/project/colorama/) Kütüphanelerini kuracaktır. bunu önceden siz yapmak isterseniz;</span>
+<span style="color: #87CEEB">Herşeyden önce cihazınızda minimum [Python 3.11](https://www.python.org/downloads/release/python-3111/) Kurulu olmalıdır.<br>Sonrasında Kurulum için dizindeki setup.py dosyasını çalıştırmanız gerekmektedir, bu dosya kurulum sırasında [PyYaml](https://pypi.org/project/PyYAML/),[TimePrint](https://pypi.org/project/TimePrintOnPYPI/) Ve [Colorama](https://pypi.org/project/colorama/) Kütüphanelerini kuracaktır. Ek olarak eger config dosyasindan 'FULL_SCREEN' Seçeneğini 'True' yaparsaniz program [PyAutoGui](https://pypi.org/project/PyAutoGUI/) kutuphanesini kullanarak her açılışta tam ekran modunda başlatacaktır. bunları önceden siz yapmak isterseniz;</span>
 
 ```bash
 pip install pyyaml
 pip install TimePrintOnPYPI
 pip install colorama
+pip install pyautogui
 ```
 # <span style="color: #007FFF;">**NASIL OYNANIR?**</span>
 <span style="color: #87CEEB">Kurulum sonrasında tek yapmanız gereken game.py Dosyanızı çalıştırıp Kayıt Olmanızdır.
@@ -60,8 +61,9 @@ Sonrasında oyunu oynamaya başlayabilirsiniz.</span>
 #  \_____|  \____/  |_| \_| |_|      |_____|  \_____|                                                            
                                                                                                                 
 #Elleme dedigim yerleri ellemezsen bir sorun olmaz
-#"" gibi metin isaretlerini Kesinlikle Kullanmamalisin.
-#Ve Son olarak kesinlikle degerleri yazarken 0 veya false kullanma kodu bozabilir.
+# Degerler 'float' - 'string' turunde olamazlar program duzgun calismayacaktir ya da algilayabilirse size hata mesajını verir.
+#desteklenen degerler: (bool , integer)[(bool = True yazdiginiz yerler)]
+#Ve Son olarak kesinlikle degerleri yazarken 0 veya False kullanma kodu bozabilir.
 
 #=======================
 # === GENEL AYARLAR ====
@@ -89,11 +91,11 @@ Oyunda_Renkler_Aktif_Ediliyormu: True
 # === ADAM ASMACA OYUNU ICIN AYARLAR ===
 #=======================================
 
-#Oyuncularin sahip oldugu can sayilari (default: 12,6,4)
+#Oyuncularin sahip oldugu can sayilari (default: kolay: 12,normal: 6,zor: 4)
 AA_Can_Kolay: 12
 AA_Can_Normal: 6
 AA_Can_Zor: 0
-#Oyun sonunda kelimeuzunlugu * value olarak hesaplanan coin verme islemleri
+#Oyun sonunda (kelime uzunlugu * asagidaki deger) olarak hesaplanan coin verme islemleri
 COIN_Kolay_Carpani: 2
 COIN_Normal_Carpani: 5
 COIN_Zor_Carpani: 10
@@ -106,18 +108,18 @@ COIN_Zor_Harf_Alma_Bedeli: 40
 # === KELIME AVI ICIN AYARLAR ===
 #================================
 
-#Bu oyunda kayit dosyasi olusmaz. icine yazilcak veri yetersizdir.
+#ADAM ASMACA OYUNU HARIC OYUNLARDA KAYIT DOSYASI YAZILMAZ. (YAN OYUN OLARAK GORULUR)
 
 #Modlara gore can degerleri (default: 8,4,1) _Egitim Modunda Can Sinirsizdir Bu Yuzden Burada Yok.
 KA_Can_Normal: 8
 KA_Can_Zor: 4
 KA_Can_Imkansiz: 1
 
-#Modlara Gore Coin Carpani (Kalan Can * value)
+#Modlara Gore Coin Carpani (Kalan Can * asagidaki deger)
 KA_CoinCarp_Normal: 4
 KA_CoinCarp_Zor: 10
 KA_CoinCarp_Imkansiz: 50 
-#Asagidaki Degisken Sonsuz Oyun Modu Icindir Bunun Coini Bulunan Kelime * value Olarak hesaplanir. buna dikkat etmelisiniz.
+#Asagidaki Degisken Sonsuz Oyun Modu Icindir Bunun Coini Bulunan Kelime * asagidaki deger Olarak hesaplanir. buna dikkat etmelisiniz.
 KA_CoinCarp_Inf: 10
 #Sonsuz Moddaki Oyun Kac SANIYE Surecek ? [gireceginiz deger 0 dan kucuk olursa 120 olarak sifirlanir.]
 KA_GameTime_Inf: 120
@@ -130,11 +132,11 @@ KA_GetWord_Price_Imkansiz: 35
 # === KKB OYUNU ICIN AYARLAR ===
 # ==============================
 
-#Oyun Sureleri (SN); default (45,30,15)
+#Oyun Sureleri (SN); default (kolay: 45,normal: 30,zor: 15)
 KKB_Sure_Kolay: 45
 KKB_Sure_Normal: 30
 KKB_Sure_Zor: 15
-#Kazanma Durumunda Alinacak Coin = (kalan sure * value)
+#Kazanma Durumunda Alinacak Coin = (kalan sure * asagidaki deger)
 KKB_wincoin_kolay: 1
 KKB_wincoin_normal: 2
 KKB_wincoin_zor: 3
@@ -149,7 +151,7 @@ TSB_Kolay_Can: 7
 TSB_Normal_Can: 5
 TSB_Zor_Can: 3
 
-#Seviyeye Gore alinacak coin carpani (Kalan can * value)
+#Seviyeye Gore alinacak coin carpani (Kalan can * asagidaki deger)
 TSB_Cok_Kolay_Coin_Carpani: 1
 TSB_Kolay_Coin_Carpani: 2
 TSB_Normal_Coin_Carpani: 3
@@ -171,12 +173,11 @@ TSB_Zor_Coin_Carpani: 4
 
 #Log dosyasi olussunmu ?
 #log_files: True
-#log dosyasindaki 1 gunluk kaydin alabilecegi maksimum satir sayisi.
+#[SADECE YUKARIDAKI DEGER 'True' OLDUGUNDA CALISIR] log dosyasindaki 1 gunluk kaydin alabilecegi maksimum satir sayisi.
 log_file_max_lines: 600
 #Bunu elleme.
 config_version: PGH_6.0.0_DKCusxnxcudcg_Config_XDFECVDUN
 ```
-
 
 ### <span style="color: orange;">**OYUN MODU SECIMI (ADAM ASMACA)**</span>
 
@@ -263,9 +264,13 @@ Hesaptaki anlik coin: 950
         + Kategorisi Verilmeyen Kelimeyi Süreniz Bitmeden Bulun.
 
 ## <span style="color: orange;">**Tutulan Kelimeyi Bul Oyunu (TKB)**</span>
-    4 Farklı Zorluk Seviyesi (Çok Kolay - Kolay - Normal - Zor)
-    Canlarınız bitmeden önce tutulan sayıyı bulun ve coin kazanın.
-
+    5 Farklı Zorluk Seviyesi (Çok Kolay - Kolay - Normal - Zor - Sonsuz)
+    1,2,3,4;
+        Canlarınız bitmeden önce tutulan sayıyı bulun ve coin kazanın.
+    5;
+        Kendi belirlediğiniz sayı aralığında sonsuz can ile sayınızı arayın.
 ## <span style="color: red;">**Lisans**</span>
+<br>
+<span style= "color: red;">© 2023 SForces ALL RIGHTS RESERVED</span>
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[LICENSE](https://github.com/SForces/PythonGameHub/blob/main/LICENSE)
