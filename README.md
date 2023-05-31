@@ -167,10 +167,10 @@ TSB_Zor_Coin_Carpani: 4
 
 # KULLANMAK ICIN 'pyautogui' KUTUPHANESINI INDIRIR!!!
 # Bu Ayar her acilista programi Tam ekran modunda baslatir.
-FULL_SCREEN: True
+#FULL_SCREEN: True
 
 #Log dosyasi olussunmu ?
-log_files: True
+#log_files: True
 #log dosyasindaki 1 gunluk kaydin alabilecegi maksimum satir sayisi.
 log_file_max_lines: 600
 #Bunu elleme.
