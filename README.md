@@ -92,7 +92,7 @@ Oyunda_Renkler_Aktif_Ediliyormu: True
 #Oyuncularin sahip oldugu can sayilari (default: 12,6,4)
 AA_Can_Kolay: 12
 AA_Can_Normal: 6
-AA_Can_Zor: 0
+AA_Can_Zor: 3
 #Oyun sonunda kelimeuzunlugu * value olarak hesaplanan coin verme islemleri
 COIN_Kolay_Carpani: 2
 COIN_Normal_Carpani: 5
