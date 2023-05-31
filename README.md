@@ -92,7 +92,7 @@ Oyunda_Renkler_Aktif_Ediliyormu: True
 #Oyuncularin sahip oldugu can sayilari (default: 12,6,4)
 AA_Can_Kolay: 12
 AA_Can_Normal: 6
-AA_Can_Zor: 3
+AA_Can_Zor: 0
 #Oyun sonunda kelimeuzunlugu * value olarak hesaplanan coin verme islemleri
 COIN_Kolay_Carpani: 2
 COIN_Normal_Carpani: 5
@@ -155,13 +155,24 @@ TSB_Kolay_Coin_Carpani: 2
 TSB_Normal_Coin_Carpani: 3
 TSB_Zor_Coin_Carpani: 4
 
-# ===========================
-# === ALT SISTEM AYARLARI ===
-# ===========================
-#Log dosyasi olussunmu ? (Aktif etmek icin basindaki # silmeniz yeterli olucaktir.)
-#log_files: True
+#         ===========================
+#         === ALT SISTEM AYARLARI ===
+#         ===========================
+
+# Asagidaki ayarlari aktif etmek icin baslarindaki # isaretini silmeniz yeterlidir. program algilayacaktir.
+
+# =============
+# === EKRAN ===
+# =============
+
+# KULLANMAK ICIN 'pyautogui' KUTUPHANESINI INDIRIR!!!
+# Bu Ayar her acilista programi Tam ekran modunda baslatir.
+FULL_SCREEN: True
+
+#Log dosyasi olussunmu ?
+log_files: True
 #log dosyasindaki 1 gunluk kaydin alabilecegi maksimum satir sayisi.
-#log_file_max_lines: 720
+log_file_max_lines: 600
 #Bunu elleme.
 config_version: PGH_6.0.0_DKCusxnxcudcg_Config_XDFECVDUN
 ```
