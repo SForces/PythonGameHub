@@ -204,7 +204,7 @@ config_version: PGH_6.0.0_DKCusxnxcudcg_Config_XDFECVDUN
     [örn 4 canınız kaldığında:120P]
     Harf Alma Bedeli = config
 
-<span style="color: #E9967A;">Yukarıda gördüğünüz can haric tüm değerler config.yaml dosyasından editlenebilir.</span>
+<span style="color: #E9967A;">Yukarıda gördüğünüz can dahil tüm değerler config.yaml dosyasından editlenebilir.</span>
 
 
 ## <span style="color: orange;">**Gerçekçi bir Adam Asmaca Oyunu**</span>
