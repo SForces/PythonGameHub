@@ -246,7 +246,7 @@ Hesaptaki anlik coin: 950
 ## <span style="color: orange;">**Özel Yazma Efekti:**</span>
     Oyun içine özel olarak kodlanmış yazma efekti eklenmiştir. yazılar bir anda ekrana çıkmaktansa belirli saniyelerde yazılmaya başlanmıştır.
 ## <span style="color: orange;">**Tek Proje Birden Fazla Oyun!**</span>
-    Bu proje Temelde Bir Adam Asmaca Oyunu Olsada, İçerisinde 'Kelime Avı' Ve 'Karıştırılmış Kelimeyi Bul' İsimli 2 Tane Daha Oyun Vardır Bunlarada Göz Atmayı Unutmayın!
+    Bu proje Temelde Bir Adam Asmaca Oyunu Olsada, İçerisinde 'Kelime Avı' , 'Karıştırılmış Kelimeyi Bul' ve 'Tutulan Sayıyı Bul (TSB)' İsimli 3 Tane Daha Oyun Vardır Bunlarada Göz Atmayı Unutmayın!
 ## <span style="color: orange;">**Kelime Avı Oyunu (KA)**</span>
     Bu Oyunda 5 Farklı Zorluk Seviyesi Vardır (eğitim-normal-zor-imkansız-sonsuz)
     eğitim modunda coin kazanılamaz.
@@ -263,7 +263,7 @@ Hesaptaki anlik coin: 950
     Zor:
         + Kategorisi Verilmeyen Kelimeyi Süreniz Bitmeden Bulun.
 
-## <span style="color: orange;">**Tutulan Kelimeyi Bul Oyunu (TKB)**</span>
+## <span style="color: orange;">**Tutulan Sayıyı Bul Oyunu (TKB)**</span>
     5 Farklı Zorluk Seviyesi (Çok Kolay - Kolay - Normal - Zor - Sonsuz)
     1,2,3,4;
         Canlarınız bitmeden önce tutulan sayıyı bulun ve coin kazanın.
@@ -271,6 +271,6 @@ Hesaptaki anlik coin: 950
         Kendi belirlediğiniz sayı aralığında sonsuz can ile sayınızı arayın.
 ## <span style="color: red;">**Lisans**</span>
 <br>
-<span style= "color: red;">© 2023 SForces ALL RIGHTS RESERVED</span>
+<span style= "color: red;">© 2023 SForces GNU 2.0</span>
 
 [LICENSE](https://github.com/SForces/PythonGameHub/blob/main/LICENSE)
