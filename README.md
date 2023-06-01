@@ -263,7 +263,7 @@ Hesaptaki anlik coin: 950
     Zor:
         + Kategorisi Verilmeyen Kelimeyi Süreniz Bitmeden Bulun.
 
-## <span style="color: orange;">**Tutulan Sayıyı Bul Oyunu (TKB)**</span>
+## <span style="color: orange;">**Tutulan Sayıyı Bul Oyunu (TSB)**</span>
     5 Farklı Zorluk Seviyesi (Çok Kolay - Kolay - Normal - Zor - Sonsuz)
     1,2,3,4;
         Canlarınız bitmeden önce tutulan sayıyı bulun ve coin kazanın.
