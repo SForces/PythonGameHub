@@ -1,17 +1,14 @@
-# <span style="color: #FF0000;">**PYTHON GAME HUB V6.0.0 - RELEASE README**</span>
+# <span style="color: #FF0000;">**PYTHON GAME HUB V6.0.2 - BETA README**</span>
 <span style="color: #87CEEB">Bu Python Game Hub Projesi İçin Bir Beni Oku Dosyasıdır.</span>
 
-## <span style="color: #007FFF;">**Kurulum**</span>
-<span style="color: #87CEEB">Herşeyden önce cihazınızda minimum [Python 3.11](https://www.python.org/downloads/release/python-3111/) Kurulu olmalıdır.<br>Sonrasında Kurulum için dizindeki setup.py dosyasını çalıştırmanız gerekmektedir, bu dosya kurulum sırasında [PyYaml](https://pypi.org/project/PyYAML/),[TimePrint](https://pypi.org/project/TimePrintOnPYPI/) Ve [Colorama](https://pypi.org/project/colorama/) Kütüphanelerini kuracaktır. Ek olarak eger config dosyasindan 'FULL_SCREEN' Seçeneğini 'True' yaparsaniz program [PyAutoGui](https://pypi.org/project/PyAutoGUI/) kutuphanesini kullanarak her açılışta tam ekran modunda başlatacaktır. bunları önceden siz yapmak isterseniz;</span>
+# <span style="color: #007FFF;">**Kurulum**</span>
+<span style="color: #87CEEB">Bu BETA sürümünde cihazınızda python ya da diğer yan kaynak uygulamalarının yüklü olmasına gerek yoktur tüm özellikler 1 .exe dosyasında toplanmıştır. `PGH_Client_V6.0.2`
+\
+Kurulum için `PGH_Client_V6.0.2` Dosyasınız çalıştırmanız yeterli olucaktır gerekli yönergeleri dosyadan takip edebilirsiniz.
+</span>
 
-```bash
-pip install pyyaml
-pip install TimePrintOnPYPI
-pip install colorama
-pip install pyautogui
-```
 # <span style="color: #007FFF;">**NASIL OYNANIR?**</span>
-<span style="color: #87CEEB">Kurulum sonrasında tek yapmanız gereken game.py Dosyanızı çalıştırıp Kayıt Olmanızdır.
+<span style="color: #87CEEB">Kurulum sonrasında tek yapmanız gereken `PGH_Client_V6.0.2` Dosyanızı çalıştırıp `Kayıt` Olmanızdır.
 Sonrasında oyunu oynamaya başlayabilirsiniz.</span>
 
 # <span style="color: yellow;">**ÖZELLİKLER**</span>
