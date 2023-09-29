@@ -1,14 +1,14 @@
-# <span style="color: #FF0000;">**PYTHON GAME HUB V6.0.2 - BETA README**</span>
+# <span style="color: #FF0000;">**PYTHON GAME HUB V6.0.3 - README**</span>
 <span style="color: #87CEEB">Bu Python Game Hub Projesi İçin Bir Beni Oku Dosyasıdır.</span>
 
 # <span style="color: #007FFF;">**Kurulum**</span>
-<span style="color: #87CEEB">Bu BETA sürümünde cihazınızda python ya da diğer yan kaynak uygulamalarının yüklü olmasına gerek yoktur tüm özellikler 1 .exe dosyasında toplanmıştır. `PGH_Client_V6.0.2`
+<span style="color: #87CEEB">Bu BETA sürümünde cihazınızda python ya da diğer yan kaynak uygulamalarının yüklü olmasına gerek yoktur tüm özellikler 1 .exe dosyasında toplanmıştır. `PGH_Client_V6.0.3`
 \
-Kurulum için `PGH_Client_V6.0.2` Dosyasınız çalıştırmanız yeterli olucaktır gerekli yönergeleri dosyadan takip edebilirsiniz.
+Kurulum için `PGH_Client_V6.0.3` Dosyasınız çalıştırmanız yeterli olucaktır gerekli yönergeleri dosyadan takip edebilirsiniz.
 </span>
 
 # <span style="color: #007FFF;">**NASIL OYNANIR?**</span>
-<span style="color: #87CEEB">Kurulum sonrasında tek yapmanız gereken `PGH_Client_V6.0.2` Dosyanızı çalıştırıp `Kayıt` Olmanızdır.
+<span style="color: #87CEEB">Kurulum sonrasında tek yapmanız gereken `PGH_Client_V6.0.3` Dosyanızı çalıştırıp `Kayıt` Olmanızdır.
 Sonrasında oyunu oynamaya başlayabilirsiniz.</span>
 
 # <span style="color: yellow;">**ÖZELLİKLER**</span>
