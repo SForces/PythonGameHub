@@ -2,13 +2,13 @@
 <span style="color: #87CEEB">Bu Python Game Hub Projesi İçin Bir Beni Oku Dosyasıdır.</span>
 
 # <span style="color: #007FFF;">**Kurulum**</span>
-<span style="color: #87CEEB">Bu BETA sürümünde cihazınızda python ya da diğer yan kaynak uygulamalarının yüklü olmasına gerek yoktur tüm özellikler 1 .exe dosyasında toplanmıştır. `PGH_Client_V6.0.3`
+<span style="color: #87CEEB">Bu BETA sürümünde cihazınızda python ya da diğer yan kaynak uygulamalarının yüklü olmasına gerek yoktur tüm özellikler 1 .exe dosyasında toplanmıştır. [PGH_Client_V6.0.3](https://github.com/SForces/PythonGameHub/releases/download/PGHV6_0_3/PGH_Client_V6.0.3.exe)
 \
-Kurulum için `PGH_Client_V6.0.3` Dosyasınız çalıştırmanız yeterli olucaktır gerekli yönergeleri dosyadan takip edebilirsiniz.
+Kurulum için [PGH_Client_V6.0.3](https://github.com/SForces/PythonGameHub/releases/download/PGHV6_0_3/PGH_Client_V6.0.3.exe) Dosyasınız çalıştırmanız yeterli olucaktır gerekli yönergeleri dosyadan takip edebilirsiniz.
 </span>
 
 # <span style="color: #007FFF;">**NASIL OYNANIR?**</span>
-<span style="color: #87CEEB">Kurulum sonrasında tek yapmanız gereken `PGH_Client_V6.0.3` Dosyanızı çalıştırıp `Kayıt` Olmanızdır.
+<span style="color: #87CEEB">Kurulum sonrasında tek yapmanız gereken [PGH_Client_V6.0.3](https://github.com/SForces/PythonGameHub/releases/download/PGHV6_0_3/PGH_Client_V6.0.3.exe) Dosyanızı çalıştırıp `Kayıt` Olmanızdır.
 Sonrasında oyunu oynamaya başlayabilirsiniz.</span>
 
 # <span style="color: yellow;">**ÖZELLİKLER**</span>
